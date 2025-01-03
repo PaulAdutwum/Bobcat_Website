@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Ride</title>
+  <link rel="stylesheet" href="bobcatExpress.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bobcat Express</div>
+      <ul class="nav-links">
+        <li><a href="bobcatExpress.html">Home</a></li>
+        <li><a href="bobcatExpress-schedule.html">Schedule</a></li>
+        <li><a href="bobCatExpress-Ride-Request.html">Request Ride</a></li>
+        <li><a href="bobCatExpress-tracking.html">Shuttle Location</a></li>
+        <li><a href="bobCatExpress-Medical.html">Medical Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="request-ride-section" class="request-ride-section">
+      <h1>Request a Ride</h1>
+      <p id="contact-info" style="background-color: #f1c40f; padding: 10px; border-radius: 5px; font-weight: bold;">
+        <strong>Contact Us:</strong> For questions, call Bobcat Express at <a href="tel:+12077868300" style="color: #610303;">(207) 786-8300</a>.
+      </p>
+
+      <form id="ride-form">
+        <label for="destination">Enter Destination:</label>
+        <input 
+          type="text" 
+          id="destination" 
+          name="destination" 
+          placeholder="Type destination" 
+          list="destinations"  
+          required
+        >
+        <datalist id="destinations">
+          <option value="Lewiston Public Library"></option>
+          <option value="Auburn Mall"></option>
+          <option value="Central Maine Medical Center"></option>
+          <option value="Chu Hall"></option>
+          <option value="Lewiston High School"></option>
+          <option value="Tree Street Youth"></option>
+          <option value="Walmart"></option>
+          <option value="Target"></option>
+          <option value="Connor's Elementary School"></option>
+        </datalist>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="approved-destinations">
+        <h2>See Our List of Approved Destinations</h2>
+        <a href="#approved-destinations" class="btn">View Destinations</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bates College Bobcat Express</p>
+  </footer>
+
+  <script src="bobcatExpress.js"></script>
+</body>
+</html>
