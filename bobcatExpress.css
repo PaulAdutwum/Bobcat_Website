@@ -1,10 +1,10 @@
 
 html, body {
-    height: 100%; /* Ensure the body and HTML occupy full height */
+    height: 100%; 
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Flexbox layout for vertical alignment */
+    flex-direction: column; 
     color: #333;
     background-image: url(batesfall.jpeg);
     background-position: center;
@@ -13,7 +13,7 @@ html, body {
     overflow-x: hidden;
 }
   
-/* Styling for Header */
+
 header {
     background-color: #610303; 
     color: white;
@@ -53,7 +53,7 @@ header {
     border-radius: 5px;
     transform: scale(1.1);
 }
-/* Styling for Main Content */
+
 
 main {
     flex: 1; 
@@ -117,19 +117,19 @@ main {
     cursor: pointer;
 }
 
-/*  Media Queries for the Homepage */
+
 @media (min-width: 600px) {
   .navbar {
-      flex-direction: row; /* Align links horizontally */
+      flex-direction: row; 
   }
 
   .nav-links {
-      flex-direction: row; /* Horizontal links */
+      flex-direction: row; 
       gap: 15px;
   }
 
   .welcome-section {
-      max-width: 80%; /* Larger width for tablets */
+      max-width: 80%; 
       font-size: medium;
   }
 
@@ -138,13 +138,13 @@ main {
   }
 
   .cards-container {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 or more columns */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   }
 }
 
 @media (min-width: 900px) {
   .welcome-section {
-      max-width: 70%; /* Adjust width for larger screens */
+      max-width: 70%;
   }
 
   .login-section {
@@ -152,11 +152,11 @@ main {
   }
 
   .cards-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger cards for desktops */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   }
 }
   
-/* Styling for Schedule Section sss */
+
 
 .schedule-section {
     padding: 20px;
@@ -374,10 +374,10 @@ main {
   .services-section h1 {
     color: #610303;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* makes background transparent */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     display: flex;
   }
   
