@@ -1,9 +1,9 @@
-// Handle Account Creation Alert
+
 document.getElementById("create-account-btn").addEventListener("click", () => {
     alert("Account creation functionality coming soon!");
   });
   
-  // Handle Login Form Submission
+ 
   document.getElementById("login-form").addEventListener("submit", (event) => {
     event.preventDefault();
     const email = document.getElementById("email").value;
@@ -11,13 +11,13 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
   
     if (email && password) {
       alert("Logged in successfully!");
-      // Add login logic here (e.g., API call to verify credentials)
+      
     } else {
       alert("Please enter your email and password.");
     }
   });
   
-  // Destination Suggestions
+
   const destinations = [
     "Lewiston Public Library",
     "Auburn Mall",
@@ -45,10 +45,10 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
         const suggestion = document.createElement("div");
         suggestion.textContent = match;
   
-        // Handle click on suggestion
+      
         suggestion.addEventListener("click", () => {
           input.value = match;
-          suggestionsBox.innerHTML = ""; // Clear suggestions
+          suggestionsBox.innerHTML = ""; 
         });
   
         suggestionsBox.appendChild(suggestion);
@@ -56,44 +56,43 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
     }
   });
   
-  // Initialize Google Map
+
   let map;
   let shuttleMarker;
   
   function initMap() {
-    const initialPosition = { lat: 44.105, lng: -70.208 }; // Starting location
+    const initialPosition = { lat: 44.105, lng: -70.208 }; 
   
-    // Create a map centered at the initial position
     map = new google.maps.Map(document.getElementById("map"), {
       center: initialPosition,
       zoom: 14,
     });
   
-    // Add a marker for the shuttle
+
     shuttleMarker = new google.maps.Marker({
       position: initialPosition,
       map: map,
       title: "Shuttle Location",
       icon: {
-        url: "shuttle-icon.png", // Custom icon
-        scaledSize: new google.maps.Size(50, 50), // Adjust size
+        url: "shuttle-icon.png", 
+        scaledSize: new google.maps.Size(50, 50),
       },
     });
   
-    // Start tracking the shuttle
+    
     trackShuttle();
   }
   
-  // Simulate fetching live shuttle location data
+  
   function fetchShuttleLocation() {
     return new Promise((resolve) => {
       setTimeout(() => {
         const newPosition = {
-          lat: 44.105 + Math.random() * 0.01 - 0.005, // Simulated latitude
-          lng: -70.208 + Math.random() * 0.01 - 0.005, // Simulated longitude
+          lat: 44.105 + Math.random() * 0.01 - 0.005, 
+          lng: -70.208 + Math.random() * 0.01 - 0.005, 
         };
         resolve(newPosition);
-      }, 2000); // Update every 2 seconds
+      }, 2000);
     });
   }
   
