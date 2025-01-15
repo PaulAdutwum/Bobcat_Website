@@ -31,7 +31,7 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
   const input = document.getElementById("destination");
   const suggestionsBox = document.getElementById("suggestions");
   
-  // Handle input changes for autocomplete
+  
   input.addEventListener("input", () => {
     const query = input.value.toLowerCase();
     suggestionsBox.innerHTML = "";
@@ -96,7 +96,7 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
     });
   }
   
-  // Track and update shuttle location on the map
+  
   async function trackShuttle() {
     while (true) {
       const newPosition = await fetchShuttleLocation();
@@ -105,7 +105,7 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
     }
   }
   
-  // Initialize the map when the window loads
+  
   window.onload = initMap;
   
   
