@@ -28,7 +28,7 @@ header {
 }
   
 .nav-links {
-    list-style: none;
+    list-style: none;   
     display: flex;
     padding: 0;
     margin: 10px 0;
@@ -49,7 +49,7 @@ header {
   
 .nav-links a:hover{
     color: #f1c40f;
-    background-color: #610303;
+    background-color: #610303;  
     border-radius: 5px;
     transform: scale(1.1);
 }
@@ -64,7 +64,7 @@ main {
     background-attachment: fixed;
 }
   
-.welcome-section {
+.welcome-section {  
     text-align: center;
     margin: 20px auto;
     padding: 15px;
@@ -72,7 +72,7 @@ main {
     border-radius: 5%;
     max-width: 95%;
     opacity: 95%;
-    font-size: small;
+    font-size: small;  
     font-weight: bold;
 }
   
