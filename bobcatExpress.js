@@ -96,6 +96,7 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
       }, 2000);
     });
   }
+
   
   
   async function trackShuttle() {
