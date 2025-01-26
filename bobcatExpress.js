@@ -110,5 +110,7 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
 
   
   window.onload = initMap;
+
+
   
   
