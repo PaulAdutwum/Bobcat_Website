@@ -106,7 +106,8 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
       map.panTo(newPosition);
     }
   }
-  
+
+
   
   window.onload = initMap;
   
