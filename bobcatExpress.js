@@ -55,7 +55,8 @@ document.getElementById("create-account-btn").addEventListener("click", () => {
       });
     }
   });
-  
+
+
 
   let map;
   let shuttleMarker;
