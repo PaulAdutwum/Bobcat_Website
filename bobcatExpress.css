@@ -225,7 +225,9 @@ main {
     margin-bottom: 20px;
     font-size: 1.8rem;
   }
-  
+
+
+
   .request-ride-section form {
     display: flex;
     flex-direction: column;
